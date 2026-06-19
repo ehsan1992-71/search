@@ -15,12 +15,25 @@ body {
     justify-content: flex-end;
     padding: 20px 30px;
     gap: 15px;
+    position: relative;     /* ← اضافه کنید */
+    z-index: 10;            /* ← اضافه کنید */
 }
 
-.navbar a {
-    color: #222;
+.navbar a{
     text-decoration: none;
-    font-size: 14px;
+    color: black;
+}
+
+/* Main section - centered search */
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -50px;      /* ← از -100px به -50px تغییر دهید */
+    position: relative;     /* ← اضافه کنید */
+    z-index: 1;             /* ← اضافه کنید */
 }
 
 .navbar a:hover {
