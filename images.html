@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,4 +53,60 @@
     </div>
 
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Image Search</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Image search specific logo */
+        .image-logo {
+            font-size: 70px;
+            font-weight: bold;
+            color: #4285f4;
+            margin-bottom: 10px;
+        }
+        .image-logo span:nth-child(1) { color: #4285f4; }
+        .image-logo span:nth-child(2) { color: #ea4335; }
+        .image-logo span:nth-child(3) { color: #fbbc05; }
+        .image-logo span:nth-child(4) { color: #4285f4; }
+        .image-logo span:nth-child(5) { color: #34a853; }
+        .image-logo span:nth-child(6) { color: #ea4335; }
+        .image-logo small {
+            font-size: 20px;
+            color: #4285f4;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html">Google Search</a>
+        <a href="advanced.html">Advanced Search</a>
+    </div>
+
+    <div class="main">
+        <div class="image-logo">
+            <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
+            <small>Images</small>
+        </div>
+
+        <!-- Form for image search -->
+        <form action="https://www.google.com/search">
+            <input type="text" name="q" class="search-bar" placeholder="Search images...">
+            <!-- Hidden parameter to tell Google to show image results -->
+            <input type="hidden" name="tbm" value="isch">
+            
+            <div class="buttons">
+                <input type="submit" value="Image Search" class="btn">
+            </div>
+        </form>
+    </div>
+
+</body>
+>>>>>>> 30293a15546436bb6f0b68bbaa5bf8c1e3b81b2e
 </html>
